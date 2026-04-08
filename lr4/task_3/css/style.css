@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+h1::before,
+h1::after {
+    display: inline-block;
+    content: "";
+    position: relative;
+    height: 5px;
+    width: 200px;
+    bottom: 8px;
+    background-color: black;
+}

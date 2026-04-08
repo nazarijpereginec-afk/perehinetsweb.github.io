@@ -1,0 +1,18 @@
+table {
+    border: 1px solid black;
+    font-size: 30px;
+}
+
+table tr td {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+table tr:nth-child(2n+1) td:nth-child(2n) {
+    background-color: darkgray;
+}
+
+table tr:nth-child(2n) td:nth-child(2n+1) {
+    background-color: darkgray;
+}
