@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page-container {
+	display: flex;
+	max-width: 1000px;
+	margin: 10px auto 0;
+	border: 2px solid #333;
+	padding: 0;
+	background: #fff;
+	line-height: 30px;
+}
+
+.left-side {
+	width: 25%;
+	background-color: #3a5e90;
+	color: white;
+	padding: 20px;
+}
+
+.left-side li {
+	font-size: 16px;
+}
+
+.left-side li a {
+	text-decoration: none;
+}
+
+.right-side {
+	font-size: 16px;
+	width: calc(75% - 80px);
+	background-color: white;
+	padding: 20px;
+	padding-left: 10px;
+	color: black;
+
+}
+
+figure {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	line-height: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.menu li a {
+	text-decoration: none;
+}
+
+.place {
+	font-style: italic;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.btn {
+	display: block;
+	width: 300px;
+	height: 50px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background: #000;
+	color: #fff;
+}
+
+#portfolio ul li {
+	display: inline-block;
+}
