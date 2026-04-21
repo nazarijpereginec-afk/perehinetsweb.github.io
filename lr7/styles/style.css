@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
-    margin: 15px auto 0;
+    margin: 30px auto 0;
 }
 
 .wrap {
@@ -81,25 +85,7 @@ hr {
 .image {
     width: 70%;
     height: 250px;
-    background-size: contain;
     margin: 30px auto 0;
-    background-repeat: no-repeat;
-}
-
-.image_gaming_monitor {
-    background-image: url(../img/samsung_odyssey_G5.jpg);
-}
-
-.image_office_monitor {
-    background-image: url(../img/lg_24mp400.jpeg);
-}
-
-.image_4K_monitor {
-    background-image: url(../img/dell_ultra_sharp.jpeg);
-}
-
-.image_professional_monitor {
-    background-image: url(../img/asus.jpeg);
 }
 
 .name {
@@ -141,7 +127,7 @@ hr {
 }
 
 .btn:hover:not(.block) {
-    background-color: rgb(9, 56, 9);
+    background-color: rgb(216, 29, 116);
     cursor: pointer;
 }
 
