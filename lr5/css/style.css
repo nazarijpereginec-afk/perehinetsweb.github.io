@@ -170,6 +170,12 @@ li:nth-child(2n) {
     text-align: center;
 }
 
+.task_1_float .table::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* task 2 way table */
 .task_2_table,
 .task_2_float {
@@ -254,7 +260,9 @@ li:nth-child(2n) {
     background-color: lightgreen;
 }
 
-.clearfix {
+.task_2_float .table::after {
+    content: "";
+    display: block;
     clear: both;
 }
 
@@ -372,8 +380,4 @@ hr {
 
 .task_3 .table .red_btn {
     background-color: rgb(150, 28, 28);
-}
-
-.clearfix {
-    clear: both;
 }
