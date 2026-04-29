@@ -381,3 +381,9 @@ hr {
 .task_3 .table .red_btn {
     background-color: rgb(150, 28, 28);
 }
+
+.task_3::after {
+    content: '';
+    clear: both;
+    display: block;
+}
