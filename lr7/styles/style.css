@@ -22,6 +22,12 @@ h1 {
     border: 2px solid grey;
 }
 
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 div.card {
     width: 25%;
     position: relative;
@@ -117,8 +123,12 @@ hr {
     background-color: rgb(206, 206, 27);
     text-align: center;
     line-height: 50px;
-    margin: 50px auto 0;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 30px;   
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .block {
@@ -129,6 +139,11 @@ hr {
 .btn:hover:not(.block) {
     background-color: rgb(216, 29, 116);
     cursor: pointer;
+}
+
+.btn:active:not(.block) {
+    background-color: black;
+    color: white;
 }
 
 .bage {
@@ -152,8 +167,4 @@ hr {
 .bage_4K_monitor,
 .bage_professional_monitor {
     background-color: blue;
-}
-
-.clearfix {
-    clear: both;
 }
