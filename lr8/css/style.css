@@ -7,8 +7,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 /* General */
-
-
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* Header */
 #topbar {
@@ -38,7 +39,6 @@ header {
     line-height: 60px;
     padding: 5px 15px;
     float: left;
-    font-family: 'Open Sans', sans-serif;
 }
 
 nav::after {
@@ -84,11 +84,11 @@ header a.button {
     color: white;
     background: rgb(160, 31, 31);
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
 }
 
-.button:hover, button:hover {
+.button:hover,
+button:hover {
     cursor: pointer;
     background-color: rgb(110, 26, 26);
 }
@@ -101,14 +101,15 @@ header .container:nth-child(2) {
     transform: translate(-50%, -50%);
 }
 
-
 /* Tour */
 #tour {
     width: 100%;
     min-height: 300px;
 }
 
-#tour, #gallery, footer {
+#tour,
+#gallery,
+footer {
     background-color: rgb(32, 32, 32);
     background-image: url(../img/bg.png);
     padding-top: 40px;
@@ -127,7 +128,6 @@ h2 {
     color: white;
     font-size: 28px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     display: block;
     margin-bottom: 30px;
@@ -174,12 +174,16 @@ h2 {
     font-weight: bold;
 }
 
-.tour-place, .tour-date {
+.tour-place,
+.tour-date {
     font-size: 16px;
     margin-top: 5px;
 }
 
-.tour-town, .tour-place, .tour-date, .tour-card .button {
+.tour-town,
+.tour-place,
+.tour-date,
+.tour-card .button {
     margin-top: 15px;
 }
 
@@ -260,7 +264,6 @@ h2 {
     transform: translate(-50%, -50%);
     max-width: 600px;
     color: white;
-    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
@@ -324,6 +327,3 @@ footer div.container {
 .copyright {
     margin-top: 10px;
 }
-
-
-
