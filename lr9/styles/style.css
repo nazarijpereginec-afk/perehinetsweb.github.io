@@ -161,7 +161,7 @@ h3 {
 }
 
 #about_us {
-    width: 60%;
+    width: 75%;
     min-height: 150px;
     text-align: center;
     margin: 0 auto;
@@ -187,19 +187,22 @@ footer a {
 
 footer div.container>a {
     display: block;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
+.footer_menu {
+    display: flex;
+    gap: 10px;
+}
+
 .footer_menu li {
-    display: inline-block;
     list-style: none;
 }
 
 .footer_menu li:not(:last-child) {
-    margin-right: 10px;
     margin-bottom: 15px;
-}
+} 
 
 footer .container {
     position: absolute;
@@ -252,6 +255,10 @@ h2 {
     }
 
     #topbar div.container>a {
+        font-size: 24px;
+    }
+
+    footer div.container>a {
         font-size: 24px;
     }
 }
