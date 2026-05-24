@@ -104,10 +104,6 @@ header>.container .child {
     min-height: 300px;
 }
 
-h2 {
-    margin: 40px 0 40px 0;
-}
-
 .service {
     width: 15%;
     min-height: 100px;
@@ -128,7 +124,6 @@ i {
     width: 100%;
     min-height: 300px;
     text-align: center;
-    padding-bottom: 40px;
 }
 
 .blog {
@@ -174,6 +169,17 @@ h3 {
     margin-right: auto;
 }
 
+#about_us {
+    width: 35%;
+    min-height: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#about_us p {
+    color: grey;
+}
+
 footer {
     width: 100%;
     min-height: 200px;
@@ -207,5 +213,14 @@ footer .container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+#services,
+#blog,
+#about_us {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
 }
