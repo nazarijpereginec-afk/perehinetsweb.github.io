@@ -93,6 +93,7 @@ header>.container .child {
     text-align: center;
     width: 100%;
     min-height: 300px;
+    padding: 30px 0 15px;
 }
 
 .service {
@@ -115,6 +116,7 @@ i {
     width: 100%;
     min-height: 300px;
     text-align: center;
+    padding: 30px 0;
 }
 
 .blog {
@@ -165,6 +167,7 @@ h3 {
     min-height: 150px;
     text-align: center;
     margin: 0 auto;
+    padding: 20px 0 50px;
 }
 
 #about_us p {
@@ -202,19 +205,13 @@ footer div.container>a {
 
 .footer_menu li:not(:last-child) {
     margin-bottom: 15px;
-} 
+}
 
 footer .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#services,
-#blog,
-#about_us {
-    padding: 30px 0;
 }
 
 h2 {
@@ -236,6 +233,14 @@ h2 {
         right: 5%;
         top: 30%;
         transform: translateY(-30%);
+    }
+
+    #about_us {
+        width: 35%;
+    }
+
+    .service {
+        width: 15%;
     }
 
     .menu ul li {
@@ -264,25 +269,34 @@ h2 {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    #services {
+        padding: 45px 0 25px;
+    }
 
-    #services,
-    #blog,
-    #about_us {
+    #blog {
         padding: 45px 0;
+    }
+
+    #about_us {
+        padding: 35px 0 70px;
     }
 
     h2 {
         margin-bottom: 30px;
     }
-
 }
 
 @media (min-width: 1025px) {
+    #services {
+        padding: 60px 0 35px;
+    }
 
-    #services,
-    #blog,
-    #about_us {
+    #blog {
         padding: 60px 0;
+    }
+
+    #about_us {
+        padding: 45px 0 90px;
     }
 
     h2 {
