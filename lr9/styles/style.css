@@ -48,7 +48,7 @@ body {
     left: 7%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
@@ -96,7 +96,7 @@ header>.container .child {
 }
 
 .service {
-    width: 15%;
+    width: calc(33.333% - 20px);
     min-height: 100px;
     display: inline-block;
     color: grey;
@@ -196,7 +196,7 @@ footer div.container>a {
 }
 
 .footer_menu li:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 15px;
 }
 
@@ -248,6 +248,10 @@ h2 {
 
     .fa-bars {
         display: none !important;
+    }
+
+    #topbar div.container>a {
+        font-size: 24px;
     }
 }
 
