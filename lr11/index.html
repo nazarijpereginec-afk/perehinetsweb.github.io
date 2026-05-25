@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1>Get in <span>touch</span></h1>
+            <p>Lorem ipsum dolor sit amet Consectetur.</p>
+        </header>
+        <main>
+            <form action="">
+                <input type="text" placeholder="Contact name">
+                <input type="text" placeholder="Street">
+                <div class="container">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="Postcode">
+                </div>
+                <input type="tel" placeholder="Contact phone">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Let's talk about your idea">
+                <div class="upload_file">
+                    <label for="file_picker">
+                        <input type="file" class="file_input" id="file_picker">
+                        <img src="assets/img/upload.svg" alt="Upload">
+                        <span>Upload Additional file</span>
+                    </label>
+                    <p class="upload_description">Attach file. File size of your documents should not exceed 10MB</p>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">I want to protect my data by signing an NDA</label>
+                </div>
+                <input type="submit" class="submit" value="SUBMIT">
+            </form>
+            <div id="contact">
+                <div class="contact contact_phone">
+                    <img src="assets/img/phone.svg" alt="">
+                    <div class="contact_info">
+                        <h3>phone</h3>
+                        <a href="/">777 777 777</a>
+                    </div>
+                </div>
+
+                <div class="contact contact_email">
+                    <img src="assets/img/email.svg" alt="">
+                    <div class="contact_info">
+                        <h3>e-mail</h3>
+                        <a href="/">info@company.com</a>
+                    </div>
+                </div>
+
+                <div class="contact contact_helpdesk">
+                    <img src="assets/img/helpdesk.svg" alt="">
+                    <div class="contact_info">
+                        <h3>helpdesk</h3>
+                        <a href="/">ttps://helpdesk.com</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="address">
+                <a href="/">Headquarters
+                    <b>Company s. r. o.</b>
+                    Street. 51
+                    100 00 Prague</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
