@@ -9,11 +9,10 @@ img {
 }
 
 html {
-    height: 100%; 
+    height: 100%;
 }
 
 body {
-    /* background-color: #CFDBE4; */
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color: #424242;
@@ -34,6 +33,10 @@ header {
     margin: 0 auto;
 }
 
+header .desktop_text {
+    display: none;
+}
+
 h1 {
     font-size: 32px;
     color: #000000;
@@ -45,7 +48,7 @@ h1 span {
 }
 
 form {
-    margin: 50px auto 0;
+    margin: 40px auto 0;
 }
 
 form input {
@@ -59,10 +62,9 @@ form input {
     padding-left: 15px;
 }
 
-form input:active {
-    border-top: none;
-    border-right: none;
-    border-left: none;
+form input:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
 }
 
 form input:not(:last-child) {
@@ -72,21 +74,21 @@ form input:not(:last-child) {
 form .container {
     width: 95%;
     margin: 0 auto;
-}
-
-form .container input[placeholder="City"],
-form .container input[placeholder="Postcode"] {
-    display: inline-block;
+    display: flex;
+    gap: 10px;
 }
 
 form .container input[placeholder="City"] {
-    width: 65%;
+    flex: 2;
 }
 
 form .container input[placeholder="Postcode"] {
-    width: calc(35% - 5px);
+    flex: 1;
 }
 
+form .container input {
+    margin-bottom: 0;
+}
 
 .upload_file label {
     width: 95%;
@@ -162,10 +164,9 @@ form .checkbox label {
 
 .contact img {
     display: inline-block;
-    width: 15%;
+    width: 24px;
+    height: 24px;
     margin: 10px;
-
-
 }
 
 .contact .contact_info {
@@ -189,8 +190,8 @@ form .checkbox label {
     text-decoration: underline;
 }
 
-footer {
-    width: 95%;
+.footer {
+    width: 100%;
     min-height: 200px;
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
@@ -201,7 +202,7 @@ footer {
     position: relative;
 }
 
-footer .address {
+.footer .address {
     width: 40%;
     min-height: 40px;
     background-color: #FFFFFF;
@@ -212,12 +213,130 @@ footer .address {
     padding: 15px 15px 20px 15px;
 }
 
-footer .address a {
+.footer .address a {
     color: #0982FE;
     font-size: 13px;
     text-decoration: none;
 }
 
-footer .address a:hover {
+.footer .address a:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    #contact {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .contact {
+        display: flex;
+        width: calc(33.333333% - 15px);
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact_helpdesk {
+        margin-left: 15px;
+    }
+
+    .footer {
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrap {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #CFDBE4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        border-right: none;
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 1200px;
+        min-height: 700px;
+        display: flex;
+        border-radius: 50px;
+        overflow: hidden;
+        background-color: #fff;
+        text-align: left;
+    }
+
+    header {
+        margin: 0;
+        max-width: 75%;
+    }
+
+    .left_side {
+        text-align: left;
+        padding: 30px 60px 20px 60px;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    .left_side,
+    .right_side {
+        flex: 1;
+    }
+
+    header .desktop_text {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    header .mobile_text {
+        display: none;
+    }
+
+    .right_side .address {
+        max-width: 45%;
+        min-height: 60px;
+    }
+
+    .photo {
+        width: 40%;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+
+    form input {
+        margin: 0;
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+    form .container {
+        margin: 0;
+    }
+
+    .right_side {
+        background-size: cover;
+        background-position: center;
+        background-color: #6DE1C2;
+        background-repeat: no-repeat;
+    }
 }
