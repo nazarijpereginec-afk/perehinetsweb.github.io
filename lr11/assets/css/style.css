@@ -91,7 +91,7 @@ form .container input[placeholder="Postcode"] {
 .upload_file label {
     width: 95%;
     min-height: 100px;
-    border: 1.4px dashed #424242;
+    border: 1px dashed #424242;
     margin: 20px auto 0;
     display: flex;
     justify-content: center;
